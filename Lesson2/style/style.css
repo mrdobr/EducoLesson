@@ -134,7 +134,7 @@ body {
     opacity: 1;
     pointer-events: auto;
 }
-
+/* --- */
 .btn-slide-down {
 	display: flex;
     border-bottom: 1px solid black;
@@ -143,14 +143,16 @@ body {
 }	
 .btn-slide-down ul{
 	padding: 0px;
-	list-style-type: none;
 	margin: 0px;
 	margin-left: 10px;
 	display: none;
+	list-style-type: none;
+	z-index: 200;
 }
 .btn-slide-down > ul{
 	/* margin-left: 7px; */
 	display: block;
+	
 }
 .btn-dropdown2{
 	width: 120px;
@@ -163,12 +165,65 @@ body {
 .btn-slide-down li:hover ul li{
 	margin-bottom: 5px;
 }
-
 .btn-dropdown2:hover{
 	/* background-color: aqua;  */
 	/* width: 100px; */
 }
+/* --- */
+.ul-btn-down, .ul-btn-down li, .ul-btn-down ul, .ul-btn-down a, .ul-btn-down:after {
+  margin: 0; 
+  padding: 0;
+  z-index: 200;
+  display: block;
+}
 
+.ul-btn-down:after { /* убираем после меню действие float */ 
+  clear: both;
+  content: "";}
+
+.ul-btn-down > li { float: left; } /* горизонтальное размещение пунктов */
+
+.ul-btn-down li {
+  white-space: nowrap; /* содержимое на одной строке */ 
+  position: relative;
+}
+
+.ul-btn-down > li, .ul-btn-down > li > ul > li, .ul-btn-down > li > ul > li > ul > li { overflow: hidden; } /* всё, что за пределами элемента, скрыто */
+.ul-btn-down > li:hover, .ul-btn-down > li > ul > li:hover, .ul-btn-down > li > ul > li > ul > li:hover {overflow: visible;}
+
+.ul-btn-down li ul li, .ul-btn-down li ul li a { width: 100%; }  /* фон подпунктов равной ширины */
+
+.ul-btn-down ul { position: absolute; }
+
+.ul-btn-down ul ul { left: 100%; top: 0; } /* третий и четвёртый список позиционируется не вниз, а вправо. Можно часть списков повернуть и влево, но тогда width должен быть задан в px */
+}
+
+.ul-btn-down {
+  background: #808080;
+  background: -webkit-linear-gradient(#fff, #808080);
+  background: -moz-linear-gradient(#fff, #808080);
+  background: -o-linear-gradient(#fff, #808080);
+  background: -ms-linear-gradient(#fff, #808080);
+  background: linear-gradient(#fff, #808080);
+  border-radius: 5px;
+}
+
+.ul-btn-down > li:first-child {border-radius: 5px 0 0 5px; border-left: none;}
+
+.ul-btn-down > li {border-left: 1px solid #ccc;}
+
+.ul-btn-down > li:hover {background: #fff;}
+
+.ul-btn-down li li {background: #fff content-box; padding: 1px 1px 0px 0px; border-right: 1px solid #ccc;}
+
+.ul-btn-down li li:last-child {border-radius: 0 0 5px 5px;}
+
+.ul-btn-down li a {
+  line-height: 40px;
+  padding: 0 14px;
+  text-decoration: none;
+} 
+/* -- */
 .buttons{
 	font-family: arial,sans-serif;
 	font-size: 13px;
