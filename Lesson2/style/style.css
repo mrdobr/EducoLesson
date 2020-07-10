@@ -38,7 +38,7 @@ body {
 	padding-bottom: 7px;
 }
 
-/* --- */
+
 .btn-slide-down {
 	display: flex;
     border-bottom: 1px solid black;
@@ -52,7 +52,7 @@ body {
 	/* margin-left: 10px; */
 	display: none;
 	list-style-type: none;
-	z-index: 200;
+	/* z-index: 200; */
 }
 .btn-slide-down > ul{
 	/* margin-left: 7px; */
@@ -205,3 +205,38 @@ body {
 	
 }
 
+.popup{
+	position: fixed;
+	/* width: 350px; */
+    /* height: 250px; */
+		width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: flex-end;
+	
+}
+.cover{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	/* width: 350px; */
+    /* height: 250px;	 */
+	background: #000;
+	top: 0;
+	left: 0;
+	opacity: 0.7;	
+	z-index: 5;
+	
+}
+.popup-content{
+	width: 350px;
+	height: 250px ;
+	z-index: 10;	
+	position: fixed;
+}
+.popup-content img{
+	width: 350px;
+	height: 250px ;
+}
