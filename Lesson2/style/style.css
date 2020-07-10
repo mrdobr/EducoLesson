@@ -198,10 +198,16 @@ body {
 .noteGoods table td{
 	border: 1px #000 solid;	 
 }
+.noteGoods table td:hover{
+	border: 1px purple solid;	 
+}
 .noteGoods table tr:nth-of-type(2n){
 	background: #ccc;
 }
 .noteGoods table tr:first-child{
+	text-align: center;
+}
+.noteGoods table td:nth-of-type(3n){
 	text-align: center;
 }
 
