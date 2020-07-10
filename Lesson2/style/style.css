@@ -186,13 +186,24 @@ body {
 }
 .noteGoods{
 	width: 80%;
-	max-width: 250px;
+	max-width: 280px;
 	margin: .5em auto;
     padding: 1em;
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 }
-
-
+.noteGoods table{
+	width: 100%;
+	border: 1px #000 solid;
+}
+.noteGoods table td{
+	border: 1px #000 solid;	 
+}
+.noteGoods table tr:nth-of-type(2n){
+	background: #ccc;
+}
+.noteGoods table tr:first-child{
+	text-align: center;
+}
 
 .my-footer{
 	/* background-color: red; */
