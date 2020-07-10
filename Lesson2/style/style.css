@@ -44,6 +44,7 @@ body {
     border-bottom: 1px solid black;
     padding-bottom: 7px;
     margin: 7px;
+	justify-content: center;
 }	
 .btn-slide-down ul{
 	padding: 0px;
