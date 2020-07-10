@@ -38,102 +38,6 @@ body {
 	padding-bottom: 7px;
 }
 
-.btn-dropdown{
-	position: relative;
-    width: 200px;
-    margin: 0 auto;
-    padding: 10px;
- 
-
-    background: #fff;
-    border-radius: 7px;
-    border: 1px solid rgba(0,0,0,0.15);
-    box-shadow: 0 1px 1px rgba(50,50,50,0.1);
-    cursor: pointer;
-    outline: none;
- 
-    font-weight: bold;
-    color: #8AA8BD;
-}
-.btn-dropdown:after{
-	content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    margin-top: -3px;
-    border-width: 6px 6px 0 6px;
-    border-style: solid;
-    border-color: #8aa8bd transparent;
-}
-.dropdown{
-    position: absolute;
-    top: 140%;
-    left: 0;
-    right: 0;
- 
-    background: white;
-    border-radius: inherit;
-    border: 1px solid rgba(0,0,0,0.17);
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    font-weight: normal;
-    transition: all 0.5s ease-in;
-    list-style: none;
-
-    opacity: 0;
-    pointer-events: none;
-}
-.btn-dropdown .dropdown li a{
-	display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #8aa8bd;
-    border-bottom: 1px solid #e6e8ea;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,1);
-    transition: all 0.3s ease-out;
-}
-.btn-dropdown .dropdown li i {
-    float: right;
-    color: inherit;
-}
-.btn-dropdown .dropdown li:first-of-type a {
-    border-radius: 7px 7px 0 0;
-}
-.btn-dropdown .dropdown li:last-of-type a {
-    border-radius: 0 0 7px 7px;
-    border: none;
-}
-.btn-dropdown .dropdown li:hover a {
-    background: #f3f8f8;
-}
-.btn-dropdown .dropdown:after {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    bottom: 100%;
-    right: 15px;
-    border-width: 0 6px 6px 6px;
-    border-style: solid;
-    border-color: #fff transparent;  
-}
- 
-.btn-dropdown .dropdown:before {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    bottom: 100%;
-    right: 13px;
-    border-width: 0 8px 8px 8px;
-    border-style: solid;
-    border-color: rgba(0,0,0,0.1) transparent;  
-}
-.btn-dropdown.active .dropdown {
-    opacity: 1;
-    pointer-events: auto;
-}
 /* --- */
 .btn-slide-down {
 	display: flex;
@@ -144,7 +48,7 @@ body {
 .btn-slide-down ul{
 	padding: 0px;
 	margin: 0px;
-	margin-left: 10px;
+	/* margin-left: 10px; */
 	display: none;
 	list-style-type: none;
 	z-index: 200;
@@ -169,60 +73,11 @@ body {
 	/* background-color: aqua;  */
 	/* width: 100px; */
 }
+.ul-btn-down > li{
+	float: left;
+}
 /* --- */
-.ul-btn-down, .ul-btn-down li, .ul-btn-down ul, .ul-btn-down a, .ul-btn-down:after {
-  margin: 0; 
-  padding: 0;
-  z-index: 200;
-  display: block;
-}
 
-.ul-btn-down:after { /* убираем после меню действие float */ 
-  clear: both;
-  content: "";}
-
-.ul-btn-down > li { float: left; } /* горизонтальное размещение пунктов */
-
-.ul-btn-down li {
-  white-space: nowrap; /* содержимое на одной строке */ 
-  position: relative;
-}
-
-.ul-btn-down > li, .ul-btn-down > li > ul > li, .ul-btn-down > li > ul > li > ul > li { overflow: hidden; } /* всё, что за пределами элемента, скрыто */
-.ul-btn-down > li:hover, .ul-btn-down > li > ul > li:hover, .ul-btn-down > li > ul > li > ul > li:hover {overflow: visible;}
-
-.ul-btn-down li ul li, .ul-btn-down li ul li a { width: 100%; }  /* фон подпунктов равной ширины */
-
-.ul-btn-down ul { position: absolute; }
-
-.ul-btn-down ul ul { left: 100%; top: 0; } /* третий и четвёртый список позиционируется не вниз, а вправо. Можно часть списков повернуть и влево, но тогда width должен быть задан в px */
-}
-
-.ul-btn-down {
-  background: #808080;
-  background: -webkit-linear-gradient(#fff, #808080);
-  background: -moz-linear-gradient(#fff, #808080);
-  background: -o-linear-gradient(#fff, #808080);
-  background: -ms-linear-gradient(#fff, #808080);
-  background: linear-gradient(#fff, #808080);
-  border-radius: 5px;
-}
-
-.ul-btn-down > li:first-child {border-radius: 5px 0 0 5px; border-left: none;}
-
-.ul-btn-down > li {border-left: 1px solid #ccc;}
-
-.ul-btn-down > li:hover {background: #fff;}
-
-.ul-btn-down li li {background: #fff content-box; padding: 1px 1px 0px 0px; border-right: 1px solid #ccc;}
-
-.ul-btn-down li li:last-child {border-radius: 0 0 5px 5px;}
-
-.ul-btn-down li a {
-  line-height: 40px;
-  padding: 0 14px;
-  text-decoration: none;
-} 
 /* -- */
 .buttons{
 	font-family: arial,sans-serif;
