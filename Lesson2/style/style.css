@@ -59,7 +59,8 @@ body {
 	
 }
 .btn-dropdown2{
-	width: 120px;
+	width: 150px;
+	height: 15px;
 	margin-bottom: 5px;
 }
 .btn-slide-down li:hover ul{
