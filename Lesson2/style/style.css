@@ -149,22 +149,21 @@ body {
 	align-self: center;	
 }
 .content img{
-	/* max-width: 200px; */
-	max-height: 150px;
+	max-width: 315px;
+	max-height: 160px;
 	padding: .3em .1em;
 	
 }
 .goods {
 	margin: 7px;
 	border: 1px #ccc solid;
-	
 	display: flex;
 	/* justify-content: center; */
 	/* align-items: center; */
 	flex-direction: column;
 	min-height: 100px;
 	max-height: 550px;
-
+	width: 350px;
 }
 .goods>*{
 	/* border: 2px dotted blue; */
@@ -192,6 +191,9 @@ body {
     padding: 1em;
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 }
+
+
+
 .my-footer{
 	/* background-color: red; */
 	text-align: center;	
