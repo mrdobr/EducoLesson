@@ -48,58 +48,45 @@ body {
 }	
 .btn-slide-down ul{
 	list-style:none;
+	margin: 0;
+	padding: 0;
 }
-
 .btn-slide-down > ul{
 	display:flex;
 	justify-content:center;	
 }
-
-.btn-slide-down > ul > li{
-	border-right:1px solid #ffffff;
-}
-.btn-slide-down > ul:first-child{
-	border-left:1px solid #ffffff;
-}
-	
 .btn-slide-down a{
 	display:block;
-	background:#eceaced;
-	padding:15px 30px 15px 40px;
-	color:#ffffff;
-	text-decoration:none;
-	text-transform:uppercase;
+	/* background:#eceaced; */
+	/* padding:15px 30px 15px 40px; */
+	/* color:#ffffff; */
+	/* text-decoration:none; */
+	/* text-transform:uppercase; */
 }
-
 .btn-slide-down a:hover{
-	color:#ffffff;
-	background:#638d96;
 	transition:0.3s;
 }
-
 .btn-slide-down li > ul li{
-	border:1px solid #ffffff;
-	background:#00a2ad;	
+	/* border:1px solid #ffffff; */
+	/* background:#00a2ad;	 */
 }
-
 .btn-slide-down li > ul li a{
 	text-transform:none;
 }
-
 .btn-slide-down li > ul li a:hover{
-	text-transform:none;
+	/* text-transform:none; */
 	background:#e70
 }
-
 .btn-slide-down ul ul{
 	display:none;	
 }
-
 .btn-slide-down ul li:hover ul{
 	display:block;	
 	position:absolute;	
 }
-
+.btn-dropdown2 {
+	width: 150px;
+}
 
 /* --- */
 
